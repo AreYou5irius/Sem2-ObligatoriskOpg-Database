@@ -14,20 +14,20 @@ namespace ObligatoriskOpgave
         static void Main(string[] args)
         {
             Hotel hotel =new Hotel(8, "Jeg er en test", "testvej 1");
-           
+
             //new ManageHotel().Create(hotel);
             //Console.WriteLine(new ManageHotel().GetFromId(8));
             //hotel.Address = "NY testvej 1";
             //new ManageHotel().Update(hotel, 8);
             //Console.WriteLine(new ManageHotel().GetFromId(8));
-            new ManageHotel().Delete(8);
+            //new ManageHotel().Delete(8);
 
-           // List<Hotel> list = new ManageHotel().GetAll();
+            //List<Hotel> list = new ManageHotel().GetAll();
 
             //foreach (var ho in list)
-            {
-                //Console.WriteLine(ho);
-            }
+            //{
+            //    Console.WriteLine(ho);
+            //}
 
 
             Facility facility = new Facility(9, "Dart", "Sport");
@@ -41,9 +41,9 @@ namespace ObligatoriskOpgave
 
             //List<Facility> fList = new ManageFacility().GetAll();
             //foreach (var fac in fList)
-            {
-                //Console.WriteLine(fac);
-            }
+            //{
+            //    Console.WriteLine(fac);
+            //}
         }
     }
 }

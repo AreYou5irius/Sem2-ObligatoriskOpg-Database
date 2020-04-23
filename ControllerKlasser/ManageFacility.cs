@@ -89,7 +89,7 @@ namespace ControllerKlasser
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string queryString = $"UPDATE Facility SET facility_name='{obj.Facility_Name}', price='{obj.Type}' WHERE Facility_Id ={objectNr}";  
+                string queryString = $"UPDATE Facility SET facility_name='{obj.Facility_Name}', type='{obj.Type}' WHERE Facility_Id ={objectNr}";  
                 SqlCommand command = new SqlCommand(queryString, connection);
                 command.Connection.Open();
                 command.ExecuteNonQuery();
